@@ -11,10 +11,12 @@ Este repositorio contiene **solo el ejecutable y los lanzadores**. Los recursos 
 | Archivo | Descripción |
 |---|---|
 | `srb2linux_es` | Ejecutable del motor recompilado (Linux 64-bit) |
-| `Jugar_online.sh` | Lanzador con el addon gráfico (compatible online) |
-| `Jugar_traducido.sh` | Lanzador con traducción completa |
-| `Jugar_vanilla.sh` | Lanzador sin addons (motor vanilla traducido) |
+| `Jugar_online.sh` | **Lanzador en uso**: textos + addon gráfico (compatible online) |
+| `Jugar_traducido.sh` | Legado — ya no se usa |
+| `Jugar_vanilla.sh` | Legado — ya no se usa |
 | `addons/srb2_spanish_gfx.pk3` | Glifos Doom Patch para tildes, eñes y signos, y gráficos del HUD |
+
+> **Aviso:** actualmente el proyecto se trabaja y soporta **únicamente con `Jugar_online.sh`**. Los lanzadores `Jugar_traducido.sh` y `Jugar_vanilla.sh` quedan como legado.
 
 ## Qué está traducido
 
@@ -48,12 +50,14 @@ Los lanzadores detectan automáticamente los assets en el directorio local, en `
 
 ## Cómo jugar
 
+Solo se usa `Jugar_online.sh`:
+
 ```bash
-chmod +x Jugar_*.sh srb2linux_es
+chmod +x Jugar_online.sh srb2linux_es
 ./Jugar_online.sh      # textos + gráficos traducidos; sirve en solitario y en servidores
-./Jugar_traducido.sh   # traducción completa
-./Jugar_vanilla.sh     # arranca sin el pk3 de gráficos
 ```
+
+Los lanzadores `Jugar_traducido.sh` y `Jugar_vanilla.sh` quedan como legado y ya no se utilizan.
 
 Puedes pasar argumentos extra de SRB2, por ejemplo para probar un nivel:
 
