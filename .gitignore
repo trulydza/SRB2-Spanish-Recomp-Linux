@@ -1,0 +1,17 @@
+# Assets base de SRB2 (NO se suben: vienen de la instalación normal)
+srb2.pk3
+zones.pk3
+music.pk3
+characters.pk3
+*.dat
+*.ssg
+
+# Configuración y datos de usuario
+config.cfg
+dconfig.cfg
+logs/
+latest-log.txt
+
+# Addons personales / de terceros
+addons/*
+!addons/srb2_spanish_gfx.pk3
